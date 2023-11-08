@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Usuário - Gerenciamento</title>
+</head>
+<body>
+    <button class="w3-button w3-round"  id="lightDarkBtn">Alternar Claro/Escuro</button>
+    <div class="card w3-card-4">
+    <a href="../">Voltar</a>
+    <h3>Buscar Usuário</h3>
+    <label for="getUserId">ID do Usuário:</label>
+    <input type="number" class="w3-input" id="getUserId" name="getUserId" required>
+    <button class="w3-button" onclick="getUser()">Buscar</button>
+
+    <h3>Gerenciar Usuário</h3>
+    <label for="inpuNome">Nome:</label>
+    <input type="text" id="inpuNome" name="inpuNome" required>
+    <label for="email">Email:</label>
+    <input type="text" id="inputEmail" name="email" required>
+    <button class="w3-button w3-hover-blue" onclick="updateUser()">Atualizar</button>
+    <button class="w3-button w3-hover-red" onclick="deleteUser()">Excluir</button>
+</div>
+<script src="js/toggleLightDark.js"></script>
+<script src="js/getUser.js"></script>
+<script src="js/updateUser.js"></script>
+<script src="js/deleteUser.js"></script>
+</body>
+</html>

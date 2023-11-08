@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Produto - Gerenciamento</title>
+</head>
+<body>
+    <button class="w3-button" id="lightDarkBtn">Alternar Claro/Escuro</button>
+    <div class="card w3-card-4">
+    <a href="../">Voltar</a>
+    <h3>Buscar Produto</h3>
+    <label for="getProdId">ID do Produto:</label>
+    <input type="number" class="w3-input" id="getProdId">
+    <button class="w3-button" onclick="getProd()">Buscar</button>
+
+    <h3>Gerenciar Produto</h3>
+    <label for="nomeprod">Nome:</label>
+    <input type="text" id="nomeprod" name="nomeprod" required>
+    <label for="precoprod">Preço:</label>
+    <input type="text" id="precoprod" name="precoprod" required>
+    <label for="quantidadeprod">Quantidade:</label>
+    <input type="text" id="quantidadeprod" name="quantidadeprod" required>
+    <button class="w3-button w3-hover-blue" onclick="updateProd()">Atualizar</button>
+    <button class="w3-button w3-hover-red" onclick="deleteProd()">Excluir</button>
+</div>
+<script src="js/toggleLightDark.js"></script>
+<script src="js/getProd.js"></script>
+<script src="js/updateProd.js"></script>
+<script src="js/deleteProd.js"></script>
+</body>
+</html>
